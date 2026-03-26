@@ -11,6 +11,7 @@ body {
   background: #f5f7fa;
 }
 
+/* Layout containers */
 header {
   background: #0b7285;
   color: #ffffff;
@@ -24,6 +25,7 @@ header {
   margin: 0 auto;
 }
 
+/* Header and nav */
 header h1 {
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
@@ -48,6 +50,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content */
 main {
   padding-bottom: 2rem;
 }
@@ -66,14 +69,28 @@ section h2 {
   color: #102a43;
 }
 
+section h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #334e68;
+}
+
 section p {
   margin-bottom: 0.75rem;
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* Cards on the home page */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -107,13 +124,31 @@ ul, ol {
   border-color: #0b7285;
 }
 
+/* Footer */
 footer {
   background: #0b7285;
   color: #e3f8ff;
   padding: 0.8rem 0;
+  margin-top: 1rem;
 }
 
 footer p {
   font-size: 0.85rem;
   text-align: center;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
 }
